@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+:root{
+    --wh:#fff;
+    --heftbg: rgba(124, 10, 190, 0.9);
+    --yw:rgb(224, 224, 34);
+    --text:rgb(5, 5, 70);
+    --mon:rgb(194, 11, 11);
+}
+*{
+    font-family: 'Tajawal', sans-serif;
+    transition: all 2s ease-in-out;
+}
+/* header */
+.headercolor{
+        background: var(--heftbg);
+        box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-nav .nav-item a{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--wh) !important;
+}
+.navbar-toggler{
+    box-shadow: none !important;
+    border: solid 1px var(--wh) !important;
+}
+header .navbar .navbar-nav .nav-link::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: var(--yw);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+header .navbar .navbar-nav .nav-link:hover::after{
+    width: 100%;
+}
+/* home */
+#Home{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#Home .btnjoin{
+    width: 140px;
+    height: 40px;
+    border: solid 1px var(--yw);
+    font-size: 24px;
+    background: transparent;
+    color: var(--wh);
+}
+#Home .btnjoin:hover{
+    border: solid 1px var(--wh);
+    color: var(--yw);
+    box-shadow: 5px 5px rgba(0, 0, 0,0.1);
+}
+ .homevideo video{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     object-fit: cover;
+     top: 0; left: 0;
+ }
+/* Packages */
+#Packages{
+    color: var(--text);
+}
+.packagesitem i{
+    color: var(--yw);
+    font-size: 20px;
+}
+.packagesitem .btnbook{
+    width: 130px;
+    height: 40px;
+    border: 2px solid var(--yw);
+    color: var(--text);
+    font-size: 18px;
+}
+.packagesitem .btnbook:hover{
+    border: 2px solid var(--text);
+    color: var(--yw);
+}
+.packagesitem h5{
+    color: var(--mon);
+}
+/* Booking */
+#Booking{
+    color: var(--wh);
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/travel.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#Booking .form-label{
+    color: var(--wh);
+    font-weight: 900;
+    font-size: 18px;
+}
+#Booking .form-control{
+    box-shadow: none !important;
+    border: 1px solid var(--yw);
+    /* background-color: transparent; */
+}
+#Booking .btnbooking{
+    width: 120px;
+    height: 40px;
+    border: 1px solid var(--yw);
+    font-size: 20px;
+    background-color: transparent;
+    color: var(--wh);
+}
+#Booking .btnbooking:hover{
+    border: 1px solid var(--wh);
+    color: var(--yw);
+}
+/* About */
+#About{
+    color: var(--text);
+}
+/* Services */
+#Services{
+    color: var(--text);
+}
+#Services h3{
+    color: var(--yw);
+    font-weight: 900;
+}
+/* Contact */
+#Contact{
+    background-image: url('../images/contactbg.png');
+    background-position: center;
+    background-size: cover;
+    color: var(--text);
+}
+.contactform{
+    background: var(--wh);
+    box-shadow: 5px 5px rgba(128, 128, 128,0);
+    z-index: 1000;
+}
+.contactform .form-control{
+    box-shadow: none !important;
+    border: solid 1px var(--text) !important;
+}
+/* .contactform .form-control:hover{
+    border: solid 1px var(--tex);
+} */
+.contactform .input-group-text{
+    width: 80px;
+    border: solid 2px var(--yw);
+}
+.contactform .btnsend{
+    width: 100px;
+    height: 40px;
+    border: solid 1px var(--yw);
+    font-size: 18px;
+    color: var(--text);
+}
+.contactform .btnsend:hover{
+    border: solid 1px var(--text);
+    color: var(--yw);
+}
+/* Gallery */
+#Gallery h1{
+    color:var(--text);
+}
+.gallery{
+    position: relative;
+}
+.gallery .content{
+    position: absolute;
+    color: var(--wh);
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.gallery .content i{
+    color: var(--yw);
+    font-size: 25px;
+}
+.gallery:hover .content{
+    z-index: 1;
+    bottom: 0;
+}
+/* footer */
+footer{
+    background-color: var(--heftbg);
+    color: var(--wh);
+}
